@@ -1,32 +1,30 @@
-const China = 'Китай';
-const Chile = 'Чили';
-const Australia = 'Австралия';
-const India = 'Индия';
-const Jamaica = 'Ямайка';
-const ChinaPrice = 100;
-const ChilePrice = 250;
-const AustraliaPrice = 170;
-const IndiaPrice = 80;
-const JamaicaPrice = 120;
+const сhina = 'китай';
+const сhile = 'чили';
+const australia = 'австралия';
+const india = 'индия';
+const jamaica = 'ямайка';
+let price;
+
 const CountryOfDelivery = prompt('Введите страну доставки').toLowerCase();
 
 switch (CountryOfDelivery) {
-    case 'китай':
-        console.log(`Доставка в ${China} будет стоять ${ChinaPrice} кредитов`);
+    case сhina:
+        price = 100;
         break;
-    case 'чили':
-        console.log(`Доставка в ${Chile} будет стоять ${ChilePrice} кредитов`);
+    case сhile:
+        price = 250;
         break;
-    case 'австралия':
-        console.log(`Доставка в ${Australia} будет стоять ${AustraliaPrice} кредитов`);
+    case australia:
+        price = 170;
         break;
-    case 'индия':
-        console.log(`Доставка в ${India} будет стоять ${IndiaPrice} кредитов`);
+    case india:
+        price = 80;
         break;
-    case 'ямайка':
-        console.log(`Доставка в ${Jamaica} будет стоять ${JamaicaPrice} кредитов`);
+    case jamaica:
+        price = 120;
         break;
     default:
         alert('В вашей стране доставка не доступна');
 }
+console.log(`Доставка в ${CountryOfDelivery} будет стоять ${price} кредитов`);
 
